@@ -38,6 +38,7 @@ h1 {
 p {
    color: var(--red);
   font-size: 2rem;
+  font-weight: 800;
 }
 
 

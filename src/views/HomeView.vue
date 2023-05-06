@@ -1,12 +1,14 @@
 <script setup>
   import CallToAction from '../components/CallToAction.vue';
   import Hero from '../components/Hero.vue';
+  import OurMotto from '../components/OurMotto.vue';
 </script>
 
 <template>
   <main>
     <Hero />
     <CallToAction />
+    <OurMotto />
   </main>
 </template>
 
@@ -16,7 +18,9 @@ export default {
   name: "HomeView",
   props: {},
   components: {
-    CallToAction
+    CallToAction,
+    Hero,
+    OurMotto
   },
   data() {
     return {};
