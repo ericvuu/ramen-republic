@@ -1,0 +1,39 @@
+@import './base.css';
+
+.container {
+  width: 1560px;
+  min-width: 1560px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+@media (min-width: 1366px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.container.row {
+  display: flex;
+  height: 100%;
+  padding: 0 32px;
+}
+
+.container.v-center {
+  align-items: center;
+}
+
+.container.space-between {
+  justify-content: space-between;
+}
+
+.container-fluid {
+  width: 100%;
+  height: 100%;
+}
+
+.container-fluid.row {
+  display: flex;
+  height: 100%;
+}
