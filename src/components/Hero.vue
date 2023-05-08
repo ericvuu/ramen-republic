@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="hero">
+  <section class="hero">
     <div
       class="wrapper container"
       v-bind:style="{ backgroundImage: 'url(assets/images/hero-image.jpg)' }"
@@ -9,7 +9,7 @@
       <h1>We are Ramen Republic</h1>
       <p>Authentic Japanese flavors with a California twist!</p>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

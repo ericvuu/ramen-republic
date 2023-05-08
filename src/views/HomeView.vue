@@ -3,6 +3,7 @@
   import Hero from '../components/Hero.vue';
   import OurMotto from '../components/OurMotto.vue';
   import ChefSpecial from '../components/ChefSpecial.vue';
+  import AboutUs from '../components/AboutUs.vue';
 </script>
 
 <template>
@@ -11,6 +12,7 @@
     <CallToAction />
     <OurMotto />
     <ChefSpecial />
+    <AboutUs />
   </main>
 </template>
 
@@ -23,7 +25,8 @@ export default {
     CallToAction,
     Hero,
     OurMotto,
-    ChefSpecial
+    ChefSpecial,
+    AboutUs
   },
   data() {
     return {};

@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="chef-special-container container-fluid">
+  <section class="chef-special-container container-fluid">
     <div class="chef-special-content container row">
       <h2>Chef's Daily Specials</h2>
 
@@ -13,7 +13,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

@@ -3,7 +3,7 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-  <div class="call-to-action-container container-fluid">
+  <section class="call-to-action-container container-fluid">
     <RouterLink
       to="/find-us"
       class="call-to-action-image call-to-action-image-1"
@@ -22,7 +22,7 @@ import { RouterLink } from 'vue-router'
         Our Menu
       </div>
     </RouterLink>
-  </div>
+  </section>
 </template>
 
 <script>

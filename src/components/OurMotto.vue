@@ -3,14 +3,14 @@
 </script>
 
 <template>
-  <div class="our-motto-container container-fluid">
+  <section class="our-motto-container container-fluid">
     <div class="our-motto-content container row">
       <h2>Made In Los Angeles</h2>
       <h3>Savor the authentic Japanese flavors with a touch of LA attitude!</h3>
       <p>Experience the authentic taste of Japan in the heart of Los Angeles. Our modern ramen shop offers a delicious fusion of traditional and contemporary flavors, carefully crafted with fresh, locally sourced ingredients. From our savory broth to our perfectly cooked noodles, every bite is a celebration of the art of ramen. Join us for a satisfying and unforgettable culinary journey.</p>
     </div>
 
-  </div>
+  </section>
 </template>
 
 <script>
