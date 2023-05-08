@@ -43,7 +43,7 @@ h2 {
 
 h3 {
   color: var(--red);
-  font-size: 3.5rem;
+  font-size: var(--h3);
   margin-top: 15px;
   -webkit-text-fill-color: var(--pink) !important;
   -webkit-text-stroke: 2px var(--red) !important;
@@ -51,7 +51,7 @@ h3 {
 
 p {
   margin-top: 25px;
-  font-size: 1.1rem;
+  font-size: var(--p);
 }
 
 </style>

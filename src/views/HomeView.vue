@@ -2,6 +2,7 @@
   import CallToAction from '../components/CallToAction.vue';
   import Hero from '../components/Hero.vue';
   import OurMotto from '../components/OurMotto.vue';
+  import ChefSpecial from '../components/ChefSpecial.vue';
 </script>
 
 <template>
@@ -9,6 +10,7 @@
     <Hero />
     <CallToAction />
     <OurMotto />
+    <ChefSpecial />
   </main>
 </template>
 
@@ -20,7 +22,8 @@ export default {
   components: {
     CallToAction,
     Hero,
-    OurMotto
+    OurMotto,
+    ChefSpecial
   },
   data() {
     return {};
