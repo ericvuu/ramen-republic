@@ -4,6 +4,8 @@
   import OurMotto from '../components/OurMotto.vue';
   import ChefSpecial from '../components/ChefSpecial.vue';
   import AboutUs from '../components/AboutUs.vue';
+  import Hours from '../components/Hours.vue';
+  import Footer from '../components/Footer.vue';
 </script>
 
 <template>
@@ -13,6 +15,8 @@
     <OurMotto />
     <ChefSpecial />
     <AboutUs />
+    <Hours />
+    <Footer />
   </main>
 </template>
 
@@ -26,7 +30,9 @@ export default {
     Hero,
     OurMotto,
     ChefSpecial,
-    AboutUs
+    AboutUs,
+    Hours,
+    Footer
   },
   data() {
     return {};
