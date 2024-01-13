@@ -1,12 +1,12 @@
 <template>
-  <main class="container">
+  <main>
     <section class="menu-section">
       <h2>Menu</h2>
       <div class="menu-items">
         <div v-for="(item, index) in items" :key="index">
           <div class="item-card">
             <p class="item-name">{{ item.name }}</p>
-            <p class="item-price">{{ item.price }}</p>
+            <p class="item-price">${{ item.price }}</p>
             <p class="item-description">{{ item.description }}</p>
             <button @click="addToCart(item)">Add to Cart</button>
           </div>
@@ -20,7 +20,7 @@
         <div v-for="(special, index) in specials" :key="index">
           <div class="special-card">
             <p class="special-name">{{ special.name }}</p>
-            <p class="special-price">{{ special.price }}</p>
+            <p class="special-price">${{ special.price }}</p>
             <p class="special-description">{{ special.description }}</p>
             <button @click="addToCart(special)">Add to Cart</button>
           </div>
@@ -115,8 +115,36 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.container {
+
+@media (max-width: 720px) {
+  .menu-section,
+  .specials-section,
+  .cart-sidebar {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .menu-items,
+  .specials-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item-card,
+  .special-card {
+    width: 80%;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+  }
+}
+
+main {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 20px;
 }
@@ -127,14 +155,20 @@ onMounted(() => {
   margin-right: 20px;
 }
 
+ button {
+    margin-top: 1rem;
+  }
+
 .menu-items,
 .specials-items {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .item-card,
 .special-card {
+  flex: 1;
   margin: 10px;
   padding: 15px;
   border: 1px solid #ddd;
@@ -152,6 +186,7 @@ onMounted(() => {
 .special-price {
   color: var(--red);
   font-size: 1.1rem;
+  margin-top: 1rem;
 }
 
 .item-description,
@@ -161,7 +196,6 @@ onMounted(() => {
 }
 
 button {
-  margin-top: 1rem;
   background-color: var(--red);
   color: white;
   padding: 0.5rem 1rem;
@@ -177,6 +211,10 @@ button {
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.menu-section h2, .specials-section h2 {
+  color: var(--red);
+  margin-left: 1rem;
 }
 
 .cart-sidebar h2 {
