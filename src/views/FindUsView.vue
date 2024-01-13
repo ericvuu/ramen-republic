@@ -1,19 +1,17 @@
 <script setup>
-import Footer from '../components/Footer.vue';
-import 'leaflet/dist/leaflet.css'; // Import Leaflet CSS
+import Contact from '../components/Contact.vue';
+import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import { ref, onMounted } from 'vue';
 
 const mapContainer = ref(null);
 
 onMounted(() => {
-  // Initialize the map
+
   const map = L.map(mapContainer.value).setView([51.505, -0.09], 13);
 
-  // Add a tile layer (you can use your preferred tile layer)
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {}).addTo(map);
 
-  // Add a marker
   L.marker([34.0522, -118.2437]).addTo(map)
     .bindPopup('Los Angeles, CA')
     .openPopup();
@@ -24,7 +22,7 @@ onMounted(() => {
   <main>
     <h1>Find Us</h1>
     <div ref="mapContainer" class="map-container"></div>
-    <Footer />
+    <Contact />
   </main>
 </template>
 
@@ -56,7 +54,7 @@ export default {
   name: "FindUsView",
   props: {},
   components: {
-    Footer
+    Contact
   },
   data() {
     return {};

@@ -3,11 +3,11 @@
 <template>
   <section class="about-us">
     <div class="about-image-wrapper">
-      <div class="about-image" src="" />
+      <div class="about-image" />
     </div>
     <div class="about-text-wrapper">
       <div class="container">
-        <h1>Chef Yamamoto</h1>
+        <h2>Chef Yamamoto</h2>
         <h4 class="section-title">Our story</h4>
         <div class="section-description">
           <p>
@@ -32,35 +32,25 @@
   </section>
 </template>
 
-<script>
-export default {
-  name: 'about-us',
-  props: {},
-  components: {}
-}
-</script>
-
 <style scoped>
 .about-us {
   width: 100%;
   color: var(--red);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  gap: 4rem;
 }
 
 .about-image-wrapper {
   padding: 0 1rem;
-  z-index: 2;
   position: relative;
   bottom: -6rem;
 }
 
 .about-image {
-  width: 70%;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
   margin: auto;
-  height: 35vw;
   background-size: cover;
   background-position: center right;
   background-color: var(--red);
@@ -72,18 +62,16 @@ export default {
   background-color: var(--tan);
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  text-align: center;
 }
 
 .section-title {
   font-size: var(--h4);
-  text-align: center;
   padding: 1rem;
 }
 
-h1 {
-  font-size: var(--h1);
-  text-align: center;
+h2 {
+  font-size: var(--h2);
   -webkit-text-fill-color: var(--tan) !important;
   -webkit-text-stroke: 2px var(--red) !important;
 }
@@ -94,7 +82,16 @@ h4 {
 
 p {
   font-size: var(--p-large);
-  text-align: center;
   padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .about-text-wrapper {
+    padding: 2rem 1rem;
+  }
+
+  .about-image-wrapper {
+    bottom: 0;
+  }
 }
 </style>

@@ -74,16 +74,16 @@ export default {
 
 .standard-items {
   display: flex;
-  flex-direction: column; /* Change to column */
-  align-items: center; /* Align items to center */
+  flex-direction: column;
+  align-items: center;
   margin-top: 40px;
   width: 100%;
 }
 
 .standard-item {
-  width: 100%; /* Full width of the container */
+  width: 100%;
   text-align: center;
-  margin-top: 20px; /* Add margin for spacing between items */
+  margin-top: 20px;
 }
 
 h2 {
@@ -111,7 +111,7 @@ p {
 
 .description {
   font-size: var(--p);
-  margin-top: 15px; /* Adjust spacing */
+  margin-top: 15px;
   color: black;
 }
 

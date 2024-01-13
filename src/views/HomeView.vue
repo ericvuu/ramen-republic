@@ -5,7 +5,7 @@
   import ChefSpecial from '../components/ChefSpecial.vue';
   import AboutUs from '../components/AboutUs.vue';
   import Hours from '../components/Hours.vue';
-  import Footer from '../components/Footer.vue';
+  import Contact from '../components/Contact.vue';
 </script>
 
 <template>
@@ -16,7 +16,7 @@
     <ChefSpecial />
     <AboutUs />
     <Hours />
-    <Footer />
+    <Contact />
   </main>
 </template>
 
@@ -32,7 +32,7 @@ export default {
     ChefSpecial,
     AboutUs,
     Hours,
-    Footer
+    Contact
   },
   data() {
     return {};

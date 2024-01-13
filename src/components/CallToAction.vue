@@ -36,17 +36,17 @@ export default {
 <style scoped>
 .call-to-action-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .call-to-action-image {
-  width: 50%;
+  width: 100%;
   min-height: 50vh;
   background-size: cover;
   background-position: center center;
   background-color: var(--red);
   display: flex;
   flex-direction: column;
-  -webkit-box-pack: center;
   justify-content: center;
   align-items: center;
 }
@@ -61,8 +61,9 @@ export default {
   transition: opacity 0.2s ease-in-out 0s;
 }
 
-.call-to-action-button:hover {
-    background-size: contain;
-    background-image: url("assets/images/blob-hover.svg") !important;
+@media (min-width: 768px) {
+  .call-to-action-image {
+    width: 50%;
+  }
 }
 </style>

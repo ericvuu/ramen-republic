@@ -1,7 +1,7 @@
 <script setup>
 import ChefSpecial from '../components/ChefSpecial.vue';
 import StandardMenu from '../components/StandardMenu.vue';
-import Footer from '../components/Footer.vue';
+import Contact from '../components/Contact.vue';
 
 </script>
 
@@ -9,7 +9,7 @@ import Footer from '../components/Footer.vue';
   <main>
     <ChefSpecial />
     <StandardMenu/>
-    <Footer />
+    <Contact />
   </main>
 </template>
 
@@ -29,7 +29,7 @@ export default {
   components: {
     StandardMenu,
     ChefSpecial,
-    Footer
+    Contact
   },
   data() {
     return {};

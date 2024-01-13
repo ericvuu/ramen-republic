@@ -27,10 +27,6 @@ export default {
   justify-content: center;
   align-items: center;
   background-color: var(--tan);
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -10; */
 }
 
 h1 {

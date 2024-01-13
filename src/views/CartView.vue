@@ -43,9 +43,11 @@
       </div>
     </aside>
   </main>
+   <Contact />
 </template>
 
 <script setup>
+import Contact from '../components/Contact.vue';
 import { ref, onMounted } from 'vue';
 
 const items = ref([]);

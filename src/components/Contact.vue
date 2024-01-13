@@ -3,13 +3,15 @@ import { RouterLink } from 'vue-router';
 </script>
 
 <template>
-  <section class="footer">
-    <div class="footer-text-wrapper">
-        <div class="logo">
-          <RouterLink class="company-logo" to="/"><img src="/assets/images/ramen-alt.svg" alt=""></RouterLink>
-        </div>
+  <section class="contact">
+    <div class="contact-text-wrapper">
+      <div class="logo">
+        <RouterLink class="company-logo" to="/">
+          <img src="/assets/images/ramen-alt.svg" alt="">
+        </RouterLink>
+      </div>
 
-      <h1>562.123.4567</h1>
+      <h3>562.123.4567</h3>
       <ul class="food-apps">
         <li><a href="">Yelp</a></li>
         <li><a href="">Uber Eats</a></li>
@@ -20,16 +22,8 @@ import { RouterLink } from 'vue-router';
   </section>
 </template>
 
-<script>
-export default {
-  name: 'footer',
-  props: {},
-  components: {}
-}
-</script>
-
 <style scoped>
-.footer {
+.contact {
   width: 100%;
   color: var(--tan);
   background-color: var(--red);
@@ -38,7 +32,7 @@ export default {
   justify-content: center;
   align-items: center;
   gap: 4rem;
-  padding: 10vh 0px;
+  padding: 10vh 0;
 }
 
 .logo {
@@ -55,11 +49,12 @@ export default {
 }
 
 .company-logo img {
-  width: 300px;
+  width: 100%; /* Make the logo responsive */
+  max-width: 300px; /* Limit maximum width for larger screens */
 }
 
-h1 {
-  font-size: var(--h1);
+h3 {
+  font-size: var(--h3);
   text-align: center;
   color: var(--light-tan);
 }
@@ -67,35 +62,24 @@ h1 {
 .food-apps {
   margin-top: 2rem;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style-type: none;
   padding: 0;
 }
 
-li:not(:last-child) {
-  margin-right: 3rem;
+.food-apps li {
+  margin: 0.5rem;
 }
 
 .food-apps a {
   color: var(--light-tan);
   font-size: var(--h4);
   border-bottom: 2px dashed var(--light-tan);
+  transition: border-bottom 0.2s ease-in-out;
 }
 
 .food-apps a:hover {
   border-bottom: 2px solid var(--light-tan);
-}
-
-h4 {
-  font-size: var(--h4);
-  text-align: center;
-}
-
-p {
-  font-size: var(--p-large);
-  text-align: center;
-  padding: 1rem;
-  color: black;
 }
 </style>
