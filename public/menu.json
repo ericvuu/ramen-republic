@@ -3,35 +3,35 @@
     "id": "1",
     "name": "The Miso Marvel Ramen",
     "category": "Vegetarian",
-    "price": "$19",
+    "price": "19",
     "description": "A rich miso broth combined with tofu, bok choy, enoki mushrooms, bean sprouts, sesame seeds, and a perfectly seasoned egg. Served with thin noodles. (Vegan option available)"
   },
   {
     "id": "2",
     "name": "The Spicy Tonkotsu Explosion Ramen",
     "category": "Meat",
-    "price": "$23",
+    "price": "23",
     "description": "An explosive blend of spicy tonkotsu broth, pork belly, bamboo shoots, wood ear mushrooms, scallions, nori, and a fiery seasoned egg. Choose your spice level: Mild, Medium, or Inferno."
   },
   {
     "id": "3",
     "name": "The Seafood Symphony Ramen",
     "category": "Seafood",
-    "price": "$25",
+    "price": "25",
     "description": "A harmonious mix of seafood broth, shrimp, scallops, squid, mussels, napa cabbage, nori strips, and a zesty seasoned egg. Served with a medley of noodles."
   },
   {
     "id": "4",
     "name": "Crispy Gyoza Delight",
     "category": "Appetizer",
-    "price": "$10",
+    "price": "10",
     "description": "Golden-brown pan-fried gyoza filled with a succulent blend of pork, cabbage, and aromatic spices. Served with a tangy soy dipping sauce."
   },
   {
     "id": "5",
     "name": "Edamame Euphoria",
     "category": "Appetizer",
-    "price": "$8",
+    "price": "8",
     "description": "Steamed young soybeans sprinkled with sea salt, creating a simple yet delightful appetizer. Perfect for sharing and snacking."
   }
 ]
