@@ -59,7 +59,8 @@ export default {
 <style scoped>
 .standard-menu-container {
   display: flex;
-  background-color: var(--tan);
+  background-color: var(--pink);
+  width: 100%;
 }
 
 .standard-menu-content {
@@ -67,7 +68,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10vh 0px;
+  padding: 10vh 0 15vh 0px;
   text-align: center;
 }
 
@@ -76,6 +77,7 @@ export default {
   flex-direction: column; /* Change to column */
   align-items: center; /* Align items to center */
   margin-top: 40px;
+  width: 100%;
 }
 
 .standard-item {
@@ -115,5 +117,11 @@ p {
 
 .category {
   margin-top: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .standard-items {
+    width: 70%;
+  }
 }
 </style>

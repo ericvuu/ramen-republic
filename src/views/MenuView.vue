@@ -7,8 +7,8 @@ import Footer from '../components/Footer.vue';
 
 <template>
   <main>
-    <StandardMenu/>
     <ChefSpecial />
+    <StandardMenu/>
     <Footer />
   </main>
 </template>

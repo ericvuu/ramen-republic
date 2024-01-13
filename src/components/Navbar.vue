@@ -16,6 +16,9 @@ import { RouterLink } from 'vue-router';
           <div class="nav-link">
             <RouterLink to="/find-us">Find Us</RouterLink>
           </div>
+          <div class="nav-link">
+            <RouterLink to="/cart">Order</RouterLink>
+          </div>
         </div>
       </div>
     </div>
@@ -50,7 +53,8 @@ nav {
   align-items: center;
 }
 
-.nav-link:first-child {
+.nav-link:not(:last-child) {
   margin-right: 15px;
 }
+
 </style>

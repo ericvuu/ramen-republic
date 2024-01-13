@@ -1,11 +1,13 @@
 [
   {
+    "id": "6",
     "name": "The Garlic Truffle Ramen",
     "category": "vegetarian",
     "price": "18",
     "description": "A blend of creamy pork and vegetable broth, garlic, truffle oil, kale, mushrooms, black pepper, seaweed and seasoned egg. \n\n Served with thick noodles. (Contains Dairy)"
   },
   {
+    "id": "7",
     "name": "The Shoyu on Fire Ramen",
     "category": "Meat",
     "price": "21",

@@ -31,11 +31,14 @@ export default {
     }
   },
   methods: {
-    getAllSpecials() {
-      getAllSpecials().then((response) => {
-        this.specials = response
-      })
-    }
+   async getAllSpecials() {
+      try {
+        const response = await fetch('specials.json');
+        this.specials = await response.json();
+      } catch (error) {
+        console.error('Error fetching specials:', error);
+      }
+    },
   },
   created() {
     this.getAllSpecials()
