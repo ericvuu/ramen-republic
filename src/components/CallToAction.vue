@@ -61,6 +61,11 @@ export default {
   transition: opacity 0.2s ease-in-out 0s;
 }
 
+.call-to-action-button:hover {
+    background-size: contain;
+    background-image: url("assets/images/blob-hover.svg") !important;
+}
+
 @media (min-width: 768px) {
   .call-to-action-image {
     width: 50%;
