@@ -9,16 +9,16 @@ import { RouterLink } from 'vue-router'
       class="call-to-action-image call-to-action-image-1"
       v-bind:style="{ backgroundImage: 'url(assets/images/call-to-action-find-us.jpg)' }"
     >
-      <div class="call-to-action-button" v-bind:style="{ backgroundImage: 'url(assets/images/blob.svg)' }">
+      <div class="call-to-action-button" v-bind:style="{ backgroundImage: 'url(/assets/images/blob.svg)' }">
         Find Us
       </div>
     </RouterLink>
     <RouterLink
       to="/find-us"
       class="call-to-action-image call-to-action-image-2"
-      v-bind:style="{ backgroundImage: 'url(assets/images/call-to-action-menu.jpg)' }"
+      v-bind:style="{ backgroundImage: 'url(/assets/images/call-to-action-menu.jpg)' }"
     >
-      <div class="call-to-action-button" v-bind:style="{ backgroundImage: 'url(assets/images/blob.svg)' }">
+      <div class="call-to-action-button" v-bind:style="{ backgroundImage: 'url(/assets/images/blob.svg)' }">
         Our Menu
       </div>
     </RouterLink>
@@ -63,7 +63,7 @@ export default {
 
 .call-to-action-button:hover {
     background-size: contain;
-    background-image: url("assets/images/blob-hover.svg") !important;
+    background-image: url("/assets/images/blob-hover.svg") !important;
 }
 
 @media (min-width: 768px) {
